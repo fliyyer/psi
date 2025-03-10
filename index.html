@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://atugatran.github.io/FontAwesome6Pro/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#fff]">
+    <!-- Navbar -->
+    <nav class="w-full bg-white shadow">
+      <div
+        class="w-full py-6 max-w-7xl mx-auto flex justify-between items-center px-4 lg:px-0"
+      >
+        <img src="/assets/psi-logo.png" alt="PSI" class="object-cover" />
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-[#14171F] text-2xl">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <ul
+          id="menu"
+          class="hidden md:flex gap-6 text-[#14171F] cursor-pointer"
+        >
+          <li>Home</li>
+          <li>Tentang PSI Jakarta</li>
+          <li>Anggota Dewan</li>
+          <li>PPID</li>
+          <li>Kegiatan PSI Jakarta</li>
+          <li>Berita PSI</li>
+          <li class="text-[#E51D26] font-medium">Pendaftaran Anggota</li>
+        </ul>
+      </div>
+      <ul
+        id="mobile-menu"
+        class="hidden flex-col items-center space-y-4 text-[#14171F] cursor-pointer md:hidden bg-white shadow-md p-4"
+      >
+        <li>Home</li>
+        <li>Tentang PSI Jakarta</li>
+        <li>Anggota Dewan</li>
+        <li>PPID</li>
+        <li>Kegiatan PSI Jakarta</li>
+        <li>Berita PSI</li>
+        <li class="text-[#E51D26] font-medium">Pendaftaran Anggota</li>
+      </ul>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Header -->
+    <header class="w-full relative flex items-center">
+      <!-- SVG Background -->
+      <div class="absolute top-0 right-0 z-[-1] h-full w-full overflow-hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 921 863"
+          fill="none"
+          class="absolute right-0 top-0 h-full w-auto max-w-[921px]"
+        >
+          <path
+            d="M492.044 0L2 865H978V0H492.044Z"
+            fill="url(#paint0_linear_1_218)"
+            stroke="#F1F1F8"
+            stroke-width="2"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_1_218"
+              x1="490"
+              y1="0"
+              x2="490"
+              y2="865"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#ED1B24" />
+              <stop offset="1" stop-color="#6F0005" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between w-full px-6"
+      >
+        <div class="flex-1">
+          <!-- indikator slider -->
+          <div class="flex gap-3">
+            <div class="w-8 h-1 bg-gray-500 rounded-lg"></div>
+            <div class="w-8 h-1 bg-gray-200 rounded-lg"></div>
+            <div class="w-8 h-1 bg-gray-200 rounded-lg"></div>
+          </div>
+          <!-- end indikator slider -->
+          <h1 class="text-[64px] leading-[76px] mt-20 font-semibold">
+            PSI Jakarta Hadir Kerja Untuk Rakyat
+          </h1>
+          <h2 class="text-5xl leading-[60px] mt-[44px] italic">
+            #PolitikJalanNinjaku
+          </h2>
+          <!-- button slider -->
+          <div class="gap-3 mt-20">
+            <button class="size-[40px] bg-[#EAEAEA] rounded-full">
+              <i class="fa-solid fa-chevron-left text-xl text-gray-500"></i>
+            </button>
+            <button class="size-[40px] bg-[#EAEAEA] rounded-full">
+              <i class="fa-solid fa-chevron-right text-xl text-gray-500"></i>
+            </button>
+          </div>
+          <!-- end button slider -->
+        </div>
+        <div class="flex-1 relative flex justify-stretch">
+          <img
+            src="/assets/img-header.png"
+            alt=""
+            class="max-w-[100%] h-auto object-cover"
+          />
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Content -->
+    <main class="w-full">
+      <section
+        class="w-full max-w-7xl mx-auto flex items-center my-20 justify-center px-4 lg:px-0"
+      >
+        <!-- Bagian Gambar -->
+        <div class="relative w-1/2">
+          <img
+            class="z-20 w-full object-cover relative -ml-2"
+            src="./assets/content-1.png"
+            alt="Kaesang Pangarep & Elva Farhi Qolbina"
+          />
+        </div>
+        <div
+          class="bg-[#ED1B24] z-10 w-1/2 flex items-center justify-center p-20 -ml-16"
+        >
+          <p class="text-[40px] text-white font-medium ml-8 leading-[66px]">
+            2 Orang Muda Keren yang Memimpin Jalannya Mesin Partai Solidaritas
+            Indonesia di Tingkat Nasional dan Provinsi
+          </p>
+        </div>
+      </section>
+
+      <section class="w-full bg-[#F2F2F2]">
+        <div class="max-w-7xl mx-auto w-full py-[100px] px-4 lg:px-0 flex">
+          <div class="flex flex-col">
+            <p class="text-black/60 text-[32px] font-medium">Mengenal lebih</p>
+            <h2 class="text-[#131313] text-5xl font-bold leading-[65px]">
+              Nilai <br />Perjuangan PSI DKI Jakarta
+            </h2>
+          </div>
+          <div class="grid grid-cols-2 gap-[30px]">
+            <div
+              class="px-8 py-12 flex gap-4 bg-[#fff] group hover:bg-[#EE0000] transition-all duration-150 rounded-[10px] flex-col"
+            >
+              <img class="size-[60px]" src="/assets/budaya.png" alt="" />
+              <p
+                class="text-[#5C5C5C] group-hover:text-white text-2xl font-bold leading-7"
+              >
+                Budaya Politik
+              </p>
+              <p
+                class="text-[#787878] group-hover:text-white text-lg leading-6"
+              >
+                Memberikan akses untuk orang muda Jakarta yang progresif dan
+                inklusif
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full my-[100px]">
+        <div class="flex flex-col gap-3 text-center">
+          <p class="text-3xl font-medium text-black/60">Siapa Saja</p>
+          <p class="text-[#131313] text-5xl font-bold">
+            Orang muda penggerak PSI Jakarta?
+          </p>
+        </div>
+        <div
+          class="flex w-full items-center mt-14 overflow-x-auto gap-[30px]"
+          style="scrollbar-width: none"
+        >
+          <img class="rounded-[10px]" src="/assets/someone.png" alt="someone" />
+          <img class="rounded-[10px]" src="/assets/someone.png" alt="someone" />
+          <img class="rounded-[10px]" src="/assets/someone.png" alt="someone" />
+          <img class="rounded-[10px]" src="/assets/someone.png" alt="someone" />
+          <img class="rounded-[10px]" src="/assets/someone.png" alt="someone" />
+        </div>
+      </section>
+
+      <section class="w-full bg-[#E51D26] py-16 px-4">
+        <div class="flex flex-col gap-3 text-center">
+          <p class="text-3xl font-medium text-white mt-14">Pojok Solidaritas</p>
+          <p class="text-[#fff] text-5xl font-bold">
+            Kata mereka tentang PSI Jakarta
+          </p>
+        </div>
+        <div class="mt-14 grid grid-cols-3 gap-10 items-center justify-between">
+          <div class="p-16 bg-[#FFF] rounded-[20px]">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="48"
+                viewBox="0 0 60 48"
+                fill="none"
+              >
+                <path
+                  d="M48.7371 24.528C55.4657 24.528 60 29.2931 60 36.3535C60 42.7069 54.7886 48 47.73 48C39.9986 48 34.2857 41.6465 34.2857 31.9418C34.2857 9.88364 50.0829 1.06036 60 0V9.70473C53.2757 10.9396 45.7157 17.8211 45.3771 25.4138C45.7157 25.2393 47.0571 24.528 48.7371 24.528ZM14.4557 24.528C21.1757 24.528 25.7143 29.2931 25.7143 36.3535C25.7143 42.7069 20.5029 48 13.4443 48C5.71286 48 0 41.6465 0 31.9418C0 9.88364 15.7971 1.06036 25.7143 0V9.70473C18.99 10.9396 11.43 17.8211 11.0914 25.4138C11.43 25.2393 12.7714 24.528 14.4557 24.528Z"
+                  fill="#050505"
+                  fill-opacity="0.15"
+                />
+              </svg>
+            </div>
+            <p class="text-black mt-4 text-[28px]">Terus bekerja tanpa lelah</p>
+            <p class="leading-6 mt-5">
+              Saya sangat bangga akan kinerja bro dan sis DPW PSI Jakarta yang
+              terus bekerja tanpa lelah, khususnya saat...
+            </p>
+            <div class="flex items-center gap-3 mt-10">
+              <img class="rounded-full" src="/assets/grace.png" alt="" />
+              <div class="flex flex-col gap-1 text-sm">
+                <p>Sis Grace Natalie</p>
+                <span class="text-[#808080]">Wakli Ketua Dewan Pembina</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full">
+        <div class="flex flex-col gap-3 text-center">
+          <p class="text-3xl font-medium text-black/60 mt-14">
+            PSI Jakarta Terkini
+          </p>
+          <p class="text-[#404040] text-5xl font-bold">Suara PSI Jakarta</p>
+        </div>
+      </section>
+
+      <section></section>
+    </main>
+    <!-- End Content -->
+
+    <!--  -->
+
+    <script src="index.js"></script>
+  </body>
+</html>
