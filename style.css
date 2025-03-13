@@ -21,3 +21,28 @@
 
 
 
+.card {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card img {
+  transition: opacity 0.3s ease;
+}
+
+.slick-prev,
+.slick-next {
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+}
+.slick-prev {
+  left: -60px;
+}
+.slick-next {
+  right: -60px;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+  color: #333;
+}

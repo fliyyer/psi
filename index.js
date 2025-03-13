@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
   updateSlider();
 });
 
-
+// card berita
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
@@ -91,4 +91,60 @@ var swiper = new Swiper(".mySwiper", {
       el: ".swiper-pagination",
       clickable: true,
   },
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.card');
+
+  const removeActiveClass = () => {
+    cards.forEach((card) => {
+      card.classList.remove('bg-[#EE0000]');
+      card.querySelector('.title-text')?.classList.remove('text-white');
+      card.querySelector('.description-text')?.classList.remove('text-white');
+
+      const img = card.querySelector('img');
+      if (img) {
+        img.src = img.dataset.imgDefault; 
+      }
+    });
+  };
+
+  cards.forEach((card) => {
+    const img = card.querySelector('img');
+    if (img) {
+      img.dataset.imgDefault = img.src;
+    }
+
+    card.addEventListener('click', () => {
+      removeActiveClass();
+      card.classList.add('bg-[#EE0000]');
+      card.querySelector('.title-text')?.classList.add('text-white');
+      card.querySelector('.description-text')?.classList.add('text-white');
+
+      if (img) {
+        img.src = card.dataset.imgActive;
+      }
+    });
+  });
+});
+
+
+$(document).ready(function () {
+  $(".slider").slick({
+    slidesToShow: 3, 
+    slidesToScroll: 1,
+    dots: true,
+    infinite: true,
+    prevArrow: $(".prev"),
+    nextArrow: $(".next"),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1, 
+        },
+      },
+    ],
+  });
 });
