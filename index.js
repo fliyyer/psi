@@ -154,3 +154,17 @@ $(document).ready(function () {
     ],
   });
 });
+
+
+function updateImage() {
+  const img = document.getElementById('responsive-image');
+  if (window.innerWidth < 500) {
+      img.src = '/assets/m-header.png'; 
+  } else {
+      img.src = '/assets/v-header.png'; 
+  }
+}
+
+window.onload = updateImage;
+
+window.onresize = updateImage;

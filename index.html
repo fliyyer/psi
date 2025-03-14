@@ -71,8 +71,8 @@
         class="absolute -top-6 md:-top-2 lg:top-0 right-0 z-[-1] h-full lg:w-[60%] overflow-hidden"
       >
         <img
+          id="responsive-image"
           src="/assets/v-header.png"
-          srcset="/assets/m-header.png 768w, /assets/v-header.png 1024w"
           alt="Background Header"
           class="object-cover h-full w-full"
         />
@@ -88,13 +88,13 @@
           </div>
           <h1
             id="sliderTitle"
-            class="text-[40px] md:text-[64px] max-w-sm md:max-w-none leading-tight mt-6 md:mt-16 font-semibold"
+            class="text-[36px] md:text-[64px] max-w-sm md:max-w-none leading-tight mt-6 md:mt-16 font-semibold"
           >
             PSI Jakarta Hadir Kerja Untuk Rakyat
           </h1>
           <h2
             id="sliderSubtitle"
-            class="text-2xl sm:text-3xl md:text-5xl leading-tight mt-4 md:mt-11 italic"
+            class="text-xl sm:text-3xl md:text-5xl leading-tight mt-4 md:mt-11 italic"
           >
             #PolitikJalanNinjaku
           </h2>
@@ -114,10 +114,7 @@
           </div>
           <!-- End Button Slider -->
         </div>
-        <div
-          class="flex-1 relative flex justify-center md:justify-end mt-6 md:mt-0"
-        >
-          <!-- Gambar Header -->
+        <div class="flex-1 relative flex justify-center md:justify-end">
           <img
             id="headerImage"
             src="/assets/img-header-1.png"
@@ -658,18 +655,18 @@
                 Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10710
               </p>
             </div>
-            <div class="flex flex-col min-w-[440px]">
+            <div class="flex flex-col md:min-w-[440px]">
               <h3 class="text-lg text-black font-medium">
                 Dapatkan Informasi Terbaru dari Newsletter
               </h3>
-              <div class="flex items-center gap-6 mt-3">
+              <div class="flex flex-row items-center gap-2 md:gap-6 mt-3">
                 <input
-                  class="bg-[#FFF] border border-[#E0E3EB] focus:outline-none rounded-md px-5 py-2"
+                  class="bg-[#FFF] border border-[#E0E3EB] focus:outline-none rounded-md px-2 md:px-5 py-2"
                   placeholder="Email"
                   type="text"
                 />
                 <button
-                  class="bg-[#E51D26] text-white uppercase font-bold rounded-md px-5 py-2"
+                  class="bg-[#E51D26] text-white md:uppercase md:font-bold rounded-md px-2 md:px-5 py-2"
                 >
                   Subcribe
                 </button>
@@ -679,7 +676,7 @@
           <div
             class="flex flex-col lg:flex-row items-start justify-between my-5 lg:my-14 gap-5 lg:gap-20"
           >
-            <div class="flex flex-col min-w-[316px]">
+            <div class="flex flex-col md:min-w-[316px]">
               <h3 class="text-lg text-black font-medium">Donasi</h3>
               <div class="flex flex-col gap-2 mt-3 text-black">
                 <p>BCA <span class="ml-3">6805550001</span></p>
@@ -693,7 +690,7 @@
                 Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10110 Lt.4
               </p>
             </div>
-            <div class="flex flex-col min-w-[440px]">
+            <div class="flex flex-col md:min-w-[440px]">
               <h3 class="text-lg text-black font-medium">
                 Ikuti Keseharian PSI Jakarta di :
               </h3>
