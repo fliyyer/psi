@@ -33,14 +33,14 @@
         class="w-full py-6 max-w-7xl mx-auto flex justify-between items-center px-4 lg:px-0"
       >
         <img src="/assets/psi-logo.png" alt="PSI" class="object-cover" />
-        <div class="md:hidden">
+        <div class="lg:hidden">
           <button id="menu-toggle" class="text-[#14171F] text-2xl">
             <i class="fa-solid fa-bars"></i>
           </button>
         </div>
         <ul
           id="menu"
-          class="hidden md:flex gap-6 text-[#14171F] cursor-pointer"
+          class="hidden lg:flex gap-6 text-[#14171F] cursor-pointer"
         >
           <li>Home</li>
           <li>Tentang PSI Jakarta</li>
@@ -53,7 +53,7 @@
       </div>
       <ul
         id="mobile-menu"
-        class="hidden flex-col items-center space-y-4 text-[#14171F] cursor-pointer md:hidden bg-white shadow-md p-4"
+        class="hidden flex-col items-center space-y-4 text-[#14171F] cursor-pointer lg:hidden bg-white shadow-md p-4"
       >
         <li>Home</li>
         <li>Tentang PSI Jakarta</li>
@@ -68,7 +68,7 @@
 
     <header class="w-full relative flex items-center">
       <div
-        class="absolute -top-6 md:top-0 right-0 z-[-1] h-full lg:w-[60%] overflow-hidden"
+        class="absolute -top-6 md:-top-2 lg:top-0 right-0 z-[-1] h-full lg:w-[60%] overflow-hidden"
       >
         <img
           src="/assets/v-header.png"
@@ -78,7 +78,7 @@
         />
       </div>
       <div
-        class="max-w-7xl px-4 lg:px-0 py-6 md:py-0 mx-auto flex flex-col md:flex-row items-center justify-between w-full"
+        class="max-w-7xl px-4 lg:px-0 py-6 lg:py-0 mx-auto flex flex-col md:flex-row items-center justify-between w-full"
       >
         <div class="flex-1">
           <div id="sliderIndicators" class="flex gap-2 items-center mt-4">
@@ -141,10 +141,10 @@
           />
         </div>
         <div
-          class="bg-[#ED1B24] z-10 w-full md:w-1/2 flex items-center justify-center p-6 pt-16 md:p-20 md:-ml-16"
+          class="bg-[#ED1B24] z-10 w-full md:w-1/2 flex items-center justify-center p-6 pt-16 md:p-10 lg:p-20 md:-ml-16"
         >
           <p
-            class="text-2xl md:text-[40px] text-white font-medium md:ml-8 leading-10 md:leading-[66px]"
+            class="text-2xl md:text-3xl lg:text-[40px] text-white font-medium md:ml-8 leading-10 md:leading-[52px] lg:leading-[66px]"
           >
             2 Orang Muda Keren yang Memimpin Jalannya Mesin Partai Solidaritas
             Indonesia di Tingkat Nasional dan Provinsi
@@ -246,11 +246,36 @@
           class="flex w-full items-center mt-14 overflow-x-auto gap-[30px]"
           style="scrollbar-width: none"
         >
-          <img class="rounded-[10px]" src="/assets/someone.png" alt="someone" />
-          <img class="rounded-[10px]" src="/assets/someone.png" alt="someone" />
-          <img class="rounded-[10px]" src="/assets/someone.png" alt="someone" />
-          <img class="rounded-[10px]" src="/assets/someone.png" alt="someone" />
-          <img class="rounded-[10px]" src="/assets/someone.png" alt="someone" />
+          <img
+            class="rounded-[10px] w-48 lg:w-80"
+            src="/assets/someone.png"
+            alt="someone"
+          />
+          <img
+            class="rounded-[10px] w-48 lg:w-80"
+            src="/assets/s.png"
+            alt="someone"
+          />
+          <img
+            class="rounded-[10px] w-48 lg:w-80"
+            src="/assets/someone2.png"
+            alt="someone"
+          />
+          <img
+            class="rounded-[10px] w-48 lg:w-80"
+            src="/assets/someone3.png"
+            alt="someone"
+          />
+          <img
+            class="rounded-[10px] w-48 lg:w-80"
+            src="/assets/s.png"
+            alt="someone"
+          />
+          <img
+            class="rounded-[10px] w-48 lg:w-80"
+            src="/assets/someone2.png"
+            alt="someone"
+          />
         </div>
       </section>
 
@@ -271,12 +296,16 @@
           </button>
           <div class="slider">
             <div class="px-4">
-              <div class="py-16 px-12 bg-white rounded-[20px] shadow-lg">
-                <img src="/assets/kutip.png" alt="Quote" />
-                <p class="text-black font-bold mt-4 text-[28px]">
+              <div
+                class="py-10 md:py-16 px-8 md:px-12 bg-white rounded-[20px] shadow-lg"
+              >
+                <img src="/assets/kutip.png" alt="Quote" class="w-10 md:w-14" />
+                <p
+                  class="text-black font-bold mt-4 text-xl md:leading-10 md:text-[28px]"
+                >
                   Bangga dengan gebrakan
                 </p>
-                <p class="leading-6 mt-5">
+                <p class="leading-6 text-sm md:text-base mt-3 md:mt-5">
                   Sebagai Ketua Umum selalu bangga dengan gebrakan dari DPW PSI
                   DKI Jakarta...
                 </p>
@@ -290,35 +319,18 @@
               </div>
             </div>
             <div class="px-4">
-              <div class="py-16 px-12 bg-white rounded-[20px] shadow-lg">
-                <img src="/assets/kutip.png" alt="Quote" />
-                <p class="text-black font-bold mt-4 text-[28px]">
-                  Terus bekerja tanpa lelah
+              <div
+                class="py-10 md:py-16 px-8 md:px-12 bg-white rounded-[20px] shadow-lg"
+              >
+                <img src="/assets/kutip.png" alt="Quote" class="w-10 md:w-14" />
+                <p
+                  class="text-black font-bold mt-4 text-xl md:leading-10 md:text-[28px]"
+                >
+                  Bangga dengan gebrakan
                 </p>
-                <p class="leading-6 mt-5">
-                  Saya sangat bangga akan kinerja bro dan sis DPW PSI Jakarta
-                  yang terus bekerja tanpa lelah, khususnya saat...
-                </p>
-                <div class="flex items-center gap-3 mt-10">
-                  <img class="rounded-full" src="/assets/dea.png" alt="" />
-                  <div class="flex flex-col gap-1 text-sm">
-                    <p>Sis Grace Natalie</p>
-                    <span class="text-[#808080]"
-                      >Wakli Ketua Dewan Pembina</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="px-4">
-              <div class="py-16 px-12 bg-white rounded-[20px] shadow-lg">
-                <img src="/assets/kutip.png" alt="Quote" />
-                <p class="text-black font-bold mt-4 text-[28px]">
-                  Disrupsi Dikerjakan di Ranah Politik
-                </p>
-                <p class="leading-6 mt-5">
-                  Sebagai Ketua Umum selalu bangga dengan gebrakan – gebrakan
-                  dari DPW PSI DKI Jakarta. Disaat bersamaan...
+                <p class="leading-6 text-sm md:text-base mt-3 md:mt-5">
+                  Sebagai Ketua Umum selalu bangga dengan gebrakan dari DPW PSI
+                  DKI Jakarta...
                 </p>
                 <div class="flex items-center gap-3 mt-10">
                   <img class="rounded-full" src="/assets/giring.png" alt="" />
@@ -330,20 +342,47 @@
               </div>
             </div>
             <div class="px-4">
-              <div class="py-16 px-12 bg-white rounded-[20px] shadow-lg">
-                <img src="/assets/kutip.png" alt="Quote" />
-                <p class="text-black font-bold mt-4 text-[28px]">
-                  Disrupsi Dikerjakan di Ranah Politik
+              <div
+                class="py-10 md:py-16 px-8 md:px-12 bg-white rounded-[20px] shadow-lg"
+              >
+                <img src="/assets/kutip.png" alt="Quote" class="w-10 md:w-14" />
+                <p
+                  class="text-black font-bold mt-4 text-xl md:leading-10 md:text-[28px]"
+                >
+                  Bangga dengan gebrakan
                 </p>
-                <p class="leading-6 mt-5">
-                  Apa yang dikerjakan oleh DPW PSI DKI Jakarta merupakan contoh
-                  mengesankan bagaimana disrupsi...
+                <p class="leading-6 text-sm md:text-base mt-3 md:mt-5">
+                  Sebagai Ketua Umum selalu bangga dengan gebrakan dari DPW PSI
+                  DKI Jakarta...
                 </p>
                 <div class="flex items-center gap-3 mt-10">
-                  <img class="rounded-full" src="/assets/dea.png" alt="" />
+                  <img class="rounded-full" src="/assets/giring.png" alt="" />
                   <div class="flex flex-col gap-1 text-sm">
-                    <p>Sis Dea Tunggaesti</p>
-                    <span class="text-[#808080]">Sekjen DPP PSI</span>
+                    <p>Bro Giring Ganesha</p>
+                    <span class="text-[#808080]">Ketua Umum DPP PSI</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-4">
+              <div
+                class="py-10 md:py-16 px-8 md:px-12 bg-white rounded-[20px] shadow-lg"
+              >
+                <img src="/assets/kutip.png" alt="Quote" class="w-10 md:w-14" />
+                <p
+                  class="text-black font-bold mt-4 text-xl md:leading-10 md:text-[28px]"
+                >
+                  Bangga dengan gebrakan
+                </p>
+                <p class="leading-6 text-sm md:text-base mt-3 md:mt-5">
+                  Sebagai Ketua Umum selalu bangga dengan gebrakan dari DPW PSI
+                  DKI Jakarta...
+                </p>
+                <div class="flex items-center gap-3 mt-10">
+                  <img class="rounded-full" src="/assets/giring.png" alt="" />
+                  <div class="flex flex-col gap-1 text-sm">
+                    <p>Bro Giring Ganesha</p>
+                    <span class="text-[#808080]">Ketua Umum DPP PSI</span>
                   </div>
                 </div>
               </div>
@@ -370,7 +409,7 @@
           <div class="swiper-wrapper">
             <!-- card 1 -->
             <div
-              class="swiper-slide flex flex-col w-[414px] shadow-lg rounded-lg relative bg-white"
+              class="swiper-slide flex flex-col w-[314px] md:w-[414px] shadow-lg rounded-lg relative bg-white"
             >
               <img
                 src="/assets/suara-psi.png"
@@ -379,12 +418,14 @@
               />
               <img
                 src="/assets/badge-psi.png"
-                class="absolute top-[200px] right-10 rounded-full w-16 h-16"
+                class="absolute top-36 md:top-[200px] right-10 rounded-full w-16 h-16"
                 alt="PSI"
               />
               <div class="flex flex-col p-8">
                 <span class="text-[#861818] font-medium">Politik</span>
-                <h3 class="text-[#383D49] my-4 font-medium text-2xl leading-7">
+                <h3
+                  class="text-[#383D49] my-4 font-medium text-lg md:text-2xl leading-7"
+                >
                   Komisi E Anggota DPRD DKI Jakarta Bun Joi Phiau, S.T., M.H,
                   Gelar Sosialisasi
                 </h3>
@@ -393,7 +434,7 @@
             </div>
             <!-- card 2 -->
             <div
-              class="swiper-slide flex flex-col w-[414px] shadow-lg rounded-lg relative bg-white"
+              class="swiper-slide flex flex-col w-[314px] md:w-[414px] shadow-lg rounded-lg relative bg-white"
             >
               <img
                 src="/assets/suara-psi.png"
@@ -402,12 +443,14 @@
               />
               <img
                 src="/assets/badge-psi.png"
-                class="absolute top-[200px] right-10 rounded-full w-16 h-16"
+                class="absolute top-36 md:top-[200px] right-10 rounded-full w-16 h-16"
                 alt="PSI"
               />
               <div class="flex flex-col p-8">
                 <span class="text-[#861818] font-medium">Politik</span>
-                <h3 class="text-[#383D49] my-4 font-medium text-2xl leading-7">
+                <h3
+                  class="text-[#383D49] my-4 font-medium text-lg md:text-2xl leading-7"
+                >
                   Komisi E Anggota DPRD DKI Jakarta Bun Joi Phiau, S.T., M.H,
                   Gelar Sosialisasi
                 </h3>
@@ -416,7 +459,7 @@
             </div>
             <!-- card 3 -->
             <div
-              class="swiper-slide flex flex-col w-[414px] shadow-lg rounded-lg relative bg-white"
+              class="swiper-slide flex flex-col w-[314px] md:w-[414px] shadow-lg rounded-lg relative bg-white"
             >
               <img
                 src="/assets/suara-psi.png"
@@ -425,12 +468,14 @@
               />
               <img
                 src="/assets/badge-psi.png"
-                class="absolute top-[200px] right-10 rounded-full w-16 h-16"
+                class="absolute top-36 md:top-[200px] right-10 rounded-full w-16 h-16"
                 alt="PSI"
               />
               <div class="flex flex-col p-8">
                 <span class="text-[#861818] font-medium">Politik</span>
-                <h3 class="text-[#383D49] my-4 font-medium text-2xl leading-7">
+                <h3
+                  class="text-[#383D49] my-4 font-medium text-lg md:text-2xl leading-7"
+                >
                   Komisi E Anggota DPRD DKI Jakarta Bun Joi Phiau, S.T., M.H,
                   Gelar Sosialisasi
                 </h3>
@@ -439,7 +484,7 @@
             </div>
             <!-- card 4 -->
             <div
-              class="swiper-slide flex flex-col w-[414px] shadow-lg rounded-lg relative bg-white"
+              class="swiper-slide flex flex-col w-[314px] md:w-[414px] shadow-lg rounded-lg relative bg-white"
             >
               <img
                 src="/assets/suara-psi.png"
@@ -448,12 +493,14 @@
               />
               <img
                 src="/assets/badge-psi.png"
-                class="absolute top-[200px] right-10 rounded-full w-16 h-16"
+                class="absolute top-36 md:top-[200px] right-10 rounded-full w-16 h-16"
                 alt="PSI"
               />
               <div class="flex flex-col p-8">
                 <span class="text-[#861818] font-medium">Politik</span>
-                <h3 class="text-[#383D49] my-4 font-medium text-2xl leading-7">
+                <h3
+                  class="text-[#383D49] my-4 font-medium text-lg md:text-2xl leading-7"
+                >
                   Komisi E Anggota DPRD DKI Jakarta Bun Joi Phiau, S.T., M.H,
                   Gelar Sosialisasi
                 </h3>
@@ -462,7 +509,7 @@
             </div>
             <!-- card 5 -->
             <div
-              class="swiper-slide flex flex-col w-[414px] shadow-lg rounded-lg relative bg-white"
+              class="swiper-slide flex flex-col w-[314px] md:w-[414px] shadow-lg rounded-lg relative bg-white"
             >
               <img
                 src="/assets/suara-psi.png"
@@ -471,12 +518,14 @@
               />
               <img
                 src="/assets/badge-psi.png"
-                class="absolute top-[200px] right-10 rounded-full w-16 h-16"
+                class="absolute top-36 md:top-[200px] right-10 rounded-full w-16 h-16"
                 alt="PSI"
               />
               <div class="flex flex-col p-8">
                 <span class="text-[#861818] font-medium">Politik</span>
-                <h3 class="text-[#383D49] my-4 font-medium text-2xl leading-7">
+                <h3
+                  class="text-[#383D49] my-4 font-medium text-lg md:text-2xl leading-7"
+                >
                   Komisi E Anggota DPRD DKI Jakarta Bun Joi Phiau, S.T., M.H,
                   Gelar Sosialisasi
                 </h3>
@@ -485,7 +534,7 @@
             </div>
             <!-- card 8 -->
             <div
-              class="swiper-slide flex flex-col w-[414px] shadow-lg rounded-lg relative bg-white"
+              class="swiper-slide flex flex-col w-[314px] md:w-[414px] shadow-lg rounded-lg relative bg-white"
             >
               <img
                 src="/assets/suara-psi.png"
@@ -494,12 +543,14 @@
               />
               <img
                 src="/assets/badge-psi.png"
-                class="absolute top-[200px] right-10 rounded-full w-16 h-16"
+                class="absolute top-36 md:top-[200px] right-10 rounded-full w-16 h-16"
                 alt="PSI"
               />
               <div class="flex flex-col p-8">
                 <span class="text-[#861818] font-medium">Politik</span>
-                <h3 class="text-[#383D49] my-4 font-medium text-2xl leading-7">
+                <h3
+                  class="text-[#383D49] my-4 font-medium text-lg md:text-2xl leading-7"
+                >
                   Komisi E Anggota DPRD DKI Jakarta Bun Joi Phiau, S.T., M.H,
                   Gelar Sosialisasi
                 </h3>
@@ -508,7 +559,7 @@
             </div>
             <!-- card 7 -->
             <div
-              class="swiper-slide flex flex-col w-[414px] shadow-lg rounded-lg relative bg-white"
+              class="swiper-slide flex flex-col w-[314px] md:w-[414px] shadow-lg rounded-lg relative bg-white"
             >
               <img
                 src="/assets/suara-psi.png"
@@ -517,12 +568,14 @@
               />
               <img
                 src="/assets/badge-psi.png"
-                class="absolute top-[200px] right-10 rounded-full w-16 h-16"
+                class="absolute top-36 md:top-[200px] right-10 rounded-full w-16 h-16"
                 alt="PSI"
               />
               <div class="flex flex-col p-8">
                 <span class="text-[#861818] font-medium">Politik</span>
-                <h3 class="text-[#383D49] my-4 font-medium text-2xl leading-7">
+                <h3
+                  class="text-[#383D49] my-4 font-medium text-lg md:text-2xl leading-7"
+                >
                   Komisi E Anggota DPRD DKI Jakarta Bun Joi Phiau, S.T., M.H,
                   Gelar Sosialisasi
                 </h3>
@@ -555,130 +608,137 @@
     </main>
     <!-- End Content -->
 
-    <footer class="w-full">
-      <div class="w-full max-w-7xl px-4 lg:px-0 mx-auto">
+    <footer class="w-full border-t border-[#D9D9D9]">
+      <div class="w-full mt-5 max-w-7xl px-4 lg:px-0 mx-auto">
         <img src="/assets/psi.svg" alt="PSI" />
-        <div class="flex flex-col md:flex-row items-start justify-between mt-8">
-          <div class="flex flex-col min-w-[316px]">
-            <h3 class="text-lg text-black font-medium">Kontak</h3>
-            <div class="flex flex-col gap-3 mt-3">
-              <div class="flex flex-col">
-                <p class="text-black">WhatsApp DPW PSI Jakarta</p>
-                <a
-                  href="https://wa.me/6285727531260"
-                  target="_blank"
-                  class="text-black/80"
-                  >+62 857-2753-1260</a
-                >
-              </div>
-              <div class="flex flex-col">
-                <p class="text-black">WhatsApp Fraksi PSI Jakarta #LaporPSI</p>
-                <a
-                  href="https://wa.me/6281210007765"
-                  target="_blank"
-                  class="text-black/80"
-                  >+62 812-1000-7765</a
-                >
-              </div>
-              <div class="flex flex-col">
-                <p class="text-black">Email PSI Jakarta</p>
-                <a
-                  href="mailto:solidaritasjakarta@gmail"
-                  target="_blank"
-                  class="text-black/80"
-                  >solidaritasjakarta@gmail.com</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col max-w-[300px]">
-            <h3 class="text-lg text-black font-medium">Alamat DPW DKI</h3>
-            <p class="text-black/80 mt-3 leading-[160%]">
-              Jl. K.H. Wahid Hasyim No.8, RT.2/RW.7, Kb. Sirih, Kec. Menteng,
-              Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10710
-            </p>
-          </div>
-          <div class="flex flex-col min-w-[440px]">
-            <h3 class="text-lg text-black font-medium">
-              Dapatkan Informasi Terbaru dari Newsletter
-            </h3>
-            <div class="flex items-center gap-6 mt-3">
-              <input
-                class="bg-[#FFF] border border-[#E0E3EB] focus:outline-none rounded-md px-5 py-2"
-                placeholder="Email"
-                type="text"
-              />
-              <button
-                class="bg-[#E51D26] text-white uppercase font-bold rounded-md px-5 py-2"
-              >
-                Subcribe
-              </button>
-            </div>
-          </div>
-        </div>
-
         <div
-          class="flex flex-col md:flex-row items-start justify-between my-5 md:my-14 gap-5 md:gap-20"
+          class="flex flex-col md:flex-row lg:flex-col w-full items-start justify-between"
         >
-          <div class="flex flex-col min-w-[316px]">
-            <h3 class="text-lg text-black font-medium">Donasi</h3>
-            <div class="flex flex-col gap-2 mt-3 text-black">
-              <p>BCA <span class="ml-3">6805550001</span></p>
-              <p>Partai Solidaritas Indonesia</p>
+          <div
+            class="flex flex-col lg:flex-row items-start justify-between gap-5 lg:gap-20 mt-8"
+          >
+            <div class="flex flex-col min-w-[316px]">
+              <h3 class="text-lg text-black font-medium">Kontak</h3>
+              <div class="flex flex-col gap-3 mt-3">
+                <div class="flex flex-col">
+                  <p class="text-black">WhatsApp DPW PSI Jakarta</p>
+                  <a
+                    href="https://wa.me/6285727531260"
+                    target="_blank"
+                    class="text-black/80"
+                    >+62 857-2753-1260</a
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <p class="text-black">
+                    WhatsApp Fraksi PSI Jakarta #LaporPSI
+                  </p>
+                  <a
+                    href="https://wa.me/6281210007765"
+                    target="_blank"
+                    class="text-black/80"
+                    >+62 812-1000-7765</a
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <p class="text-black">Email PSI Jakarta</p>
+                  <a
+                    href="mailto:solidaritasjakarta@gmail"
+                    target="_blank"
+                    class="text-black/80"
+                    >solidaritasjakarta@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col max-w-[300px]">
+              <h3 class="text-lg text-black font-medium">Alamat DPW DKI</h3>
+              <p class="text-black/80 mt-3 leading-[160%]">
+                Jl. K.H. Wahid Hasyim No.8, RT.2/RW.7, Kb. Sirih, Kec. Menteng,
+                Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10710
+              </p>
+            </div>
+            <div class="flex flex-col min-w-[440px]">
+              <h3 class="text-lg text-black font-medium">
+                Dapatkan Informasi Terbaru dari Newsletter
+              </h3>
+              <div class="flex items-center gap-6 mt-3">
+                <input
+                  class="bg-[#FFF] border border-[#E0E3EB] focus:outline-none rounded-md px-5 py-2"
+                  placeholder="Email"
+                  type="text"
+                />
+                <button
+                  class="bg-[#E51D26] text-white uppercase font-bold rounded-md px-5 py-2"
+                >
+                  Subcribe
+                </button>
+              </div>
             </div>
           </div>
-          <div class="flex flex-col max-w-[300px]">
-            <h3 class="text-lg text-black font-medium">Alamat Fraksi PSI</h3>
-            <p class="text-black/80 mt-3 leading-[160%]">
-              Jl. Kebon Sirih No.18 11, RT.11/RW.2, Gambir, Kecamatan Gambir,
-              Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10110 Lt.4
-            </p>
-          </div>
-          <div class="flex flex-col min-w-[440px]">
-            <h3 class="text-lg text-black font-medium">
-              Ikuti Keseharian PSI Jakarta di :
-            </h3>
-            <div class="flex items-center gap-4 mt-3">
-              <a
-                href="#"
-                class="bg-black/50 flex rounded-full size-10 items-center justify-center p-2"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="18"
-                  width="18"
-                  viewBox="0 0 512 512"
+          <div
+            class="flex flex-col lg:flex-row items-start justify-between my-5 lg:my-14 gap-5 lg:gap-20"
+          >
+            <div class="flex flex-col min-w-[316px]">
+              <h3 class="text-lg text-black font-medium">Donasi</h3>
+              <div class="flex flex-col gap-2 mt-3 text-black">
+                <p>BCA <span class="ml-3">6805550001</span></p>
+                <p>Partai Solidaritas Indonesia</p>
+              </div>
+            </div>
+            <div class="flex flex-col max-w-[300px]">
+              <h3 class="text-lg text-black font-medium">Alamat Fraksi PSI</h3>
+              <p class="text-black/80 mt-3 leading-[160%]">
+                Jl. Kebon Sirih No.18 11, RT.11/RW.2, Gambir, Kecamatan Gambir,
+                Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10110 Lt.4
+              </p>
+            </div>
+            <div class="flex flex-col min-w-[440px]">
+              <h3 class="text-lg text-black font-medium">
+                Ikuti Keseharian PSI Jakarta di :
+              </h3>
+              <div class="flex items-center gap-4 mt-3">
+                <a
+                  href="#"
+                  class="bg-black/50 flex rounded-full size-10 items-center justify-center p-2"
                 >
-                  <path
-                    fill="#ffffff"
-                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="#"
-                class="bg-black/50 flex rounded-full size-10 items-center justify-center p-2"
-              >
-                <i class="fa-brands fa-youtube text-lg text-white"></i>
-              </a>
-              <a
-                href="#"
-                class="bg-black/50 flex rounded-full size-10 items-center justify-center p-2"
-              >
-                <i class="fa-brands fa-tiktok text-lg text-white"></i>
-              </a>
-              <a
-                href="#"
-                class="bg-black/50 flex rounded-full size-10 items-center justify-center p-2"
-              >
-                <i class="fa-brands fa-whatsapp text-lg text-white"></i>
-              </a>
-              <a
-                href="#"
-                class="bg-black/50 flex rounded-full size-10 items-center justify-center p-2"
-              >
-                <i class="fa-brands fa-instagram text-lg text-white"></i>
-              </a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="18"
+                    width="18"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="#ffffff"
+                      d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="bg-black/50 flex rounded-full size-10 items-center justify-center p-2"
+                >
+                  <i class="fa-brands fa-youtube text-lg text-white"></i>
+                </a>
+                <a
+                  href="#"
+                  class="bg-black/50 flex rounded-full size-10 items-center justify-center p-2"
+                >
+                  <i class="fa-brands fa-tiktok text-lg text-white"></i>
+                </a>
+                <a
+                  href="#"
+                  class="bg-black/50 flex rounded-full size-10 items-center justify-center p-2"
+                >
+                  <i class="fa-brands fa-whatsapp text-lg text-white"></i>
+                </a>
+                <a
+                  href="#"
+                  class="bg-black/50 flex rounded-full size-10 items-center justify-center p-2"
+                >
+                  <i class="fa-brands fa-instagram text-lg text-white"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>

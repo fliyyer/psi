@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const texts = [
     {
-      title: 'PSI Jakarta Hadir Kerja Untuk Rakyat',
+      title: 'PSI Jakarta Hadir Bergerak Untuk Rakyat',
       subtitle: '#PolitikJalanNinjaku',
     },
     {
@@ -141,6 +141,12 @@ $(document).ready(function () {
     responsive: [
       {
         breakpoint: 1024,
+        settings: {
+          slidesToShow: 2, 
+        },
+      },
+      {
+        breakpoint: 768,
         settings: {
           slidesToShow: 1, 
         },
