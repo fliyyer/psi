@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Berita Psi - PSI Jakarta</title>
+    <link
+      rel="stylesheet"
+      href="https://atugatran.github.io/FontAwesome6Pro/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#fff]">
+    <!-- Navbar -->
+    <nav class="w-full bg-white shadow">
+      <div
+        class="w-full py-6 max-w-7xl mx-auto flex justify-between items-center px-4 lg:px-0"
+      >
+        <img src="/assets/psi-logo.png" alt="PSI" class="object-cover" />
+        <div class="lg:hidden">
+          <button id="menu-toggle" class="text-[#14171F] text-2xl">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <ul
+          id="menu"
+          class="hidden lg:flex gap-6 text-[#14171F] cursor-pointer"
+        >
+          <a href="#">Home</a>
+          <a href="#">Tentang PSI Jakarta</a>
+          <a href="#">Anggota Dewan</a>
+          <a href="#">PPID</a>
+          <a href="#">Kegiatan PSI Jakarta</a>
+          <a href="/berita.html">Berita PSI</a>
+          <a href="#" class="text-[#E51D26] font-medium">Pendaftaran Anggota</a>
+        </ul>
+      </div>
+      <ul
+        id="mobile-menu"
+        class="hidden flex-col items-center space-y-4 text-[#14171F] cursor-pointer lg:hidden bg-white shadow-md p-4"
+      >
+        <li>Home</li>
+        <li>Tentang PSI Jakarta</li>
+        <li>Anggota Dewan</li>
+        <li>PPID</li>
+        <li>Kegiatan PSI Jakarta</li>
+        <li>Berita PSI</li>
+        <li class="text-[#E51D26] font-medium">Pendaftaran Anggota</li>
+      </ul>
+    </nav>
+    <!-- End Navbar -->
+
+    <header class="w-full py-[72px]">
+      <div class="text-center text-black/60 text-[32px] font-medium">
+        PSI Jakarta Terkini
+      </div>
+      <h1 class="text-#131313 text-center text-5xl font-bold leading-[64px]">
+        Suara PSI Jakarta
+      </h1>
+      <div class="w-full max-w-7xl mx-auto flex gap-8 mt-8">
+        <div class="w-[70%]">
+          <div class="p-4 rounded-xl border-2 border-[#E8E8EA] bg-white">
+            <div
+              class="relative flex h-[450px] flex-col overflow-hidden rounded-xl"
+            >
+              <img
+                src="/assets/news.png"
+                alt="Peran Vital Pemuda dalam Politik dan Transformasi Melalui Visi Kaesang PSI"
+                class="absolute inset-0 w-full h-full object-cover"
+              />
+              <div
+                class="relative z-10 w-fit text-black/50 bg-[#F2F2F2] px-3 py-1 rounded-md m-4"
+              >
+                Politik dan Pemerintahan
+              </div>
+              <div class="relative mt-auto z-10 p-6 text-white">
+                <span class="text-lg leading-6">12 December 2023</span>
+                <h1
+                  class="text-2xl md:text-[42px] leading-[48px] font-medium mt-2"
+                >
+                  Peran Vital Pemuda dalam Politik dan Transformasi Melalui Visi
+                  Kaesang PSI
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[30%] flex flex-col">
+          <div class="flex flex-col">
+            <div class="flex justify-between items-start">
+              <div
+                class="text-sm text-black/50 bg-black/5 px-[10px] py-1 rounded-md"
+              >
+                Politik dan Pemerintahan
+              </div>
+              <span class="text-[#97989F]">24 Januari 2025</span>
+            </div>
+            <p class="text-xl text-[#181A2A] font-medium mt-3">
+              PSI Apresiasi Gerak Cepat Pemerintah Tangani Kasus Pagar Laut di
+              Tangerang
+            </p>
+          </div>
+          <div class="w-full h-[1px] my-7 bg-[#E8E8EA]"></div>
+          <div class="flex flex-col">
+            <div class="flex justify-between items-start">
+              <div
+                class="text-sm text-black/50 bg-black/5 px-[10px] py-1 rounded-md"
+              >
+                Kesejahteraan Sosial
+              </div>
+              <span class="text-[#97989F]">11 Februari 2025</span>
+            </div>
+            <p class="text-xl text-[#181A2A] font-medium mt-3">
+              Program Cek Kesehatan Gratis Dimulai, PSI: Satu Lagi Bukti Prabowo
+              dan Gibran Bekerja unt...
+            </p>
+          </div>
+          <div class="w-full h-[1px] my-7 bg-[#E8E8EA]"></div>
+          <div class="flex flex-col">
+            <div class="flex justify-between items-start">
+              <div
+                class="text-sm text-black/50 bg-black/5 px-[10px] py-1 rounded-md"
+              >
+                Politik dan Pemerintahan
+              </div>
+              <span class="text-[#97989F]">11 Februari 2025</span>
+            </div>
+            <p class="text-xl text-[#181A2A] font-medium mt-3">
+              Ada Upaya Pisahkan Prabowo dan Jokowi, PSI: Semakin Diadu, Semakin
+              Menyatu
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="w-full flex flex-col justify-center max-w-7xl mx-auto my-14"
+      >
+        <!-- Filter Menu -->
+        <div class="flex mx-auto gap-7" id="filterMenu">
+          <div
+            class="filter-item cursor-pointer text-[#14171F] px-3 py-1 rounded-md bg-[#f2f2f2] font-medium"
+            data-filter="all"
+          >
+            Semua
+          </div>
+          <div
+            class="filter-item cursor-pointer text-[#14171F]/70 px-3 py-1 rounded-md"
+            data-filter="opini"
+          >
+            Opini
+          </div>
+          <div
+            class="filter-item cursor-pointer text-[#14171F]/70 px-3 py-1 rounded-md"
+            data-filter="politik"
+          >
+            Politik dan Pemerintahan
+          </div>
+          <div
+            class="filter-item cursor-pointer text-[#14171F]/70 px-3 py-1 rounded-md"
+            data-filter="infrastruktur"
+          >
+            Pembangunan Infrastruktur
+          </div>
+          <div
+            class="filter-item cursor-pointer text-[#14171F]/70 px-3 py-1 rounded-md"
+            data-filter="sosial"
+          >
+            Kesejahteraan Sosial
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
