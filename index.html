@@ -234,7 +234,7 @@
         </div>
       </section>
 
-      <section class="w-full my-[100px]">
+      <section class="w-full my-[100px] relative">
         <div class="flex flex-col gap-3 text-center">
           <p class="text-xl md:text-3xl font-medium text-black/60">
             Siapa Saja
@@ -243,40 +243,68 @@
             Orang muda penggerak PSI Jakarta?
           </p>
         </div>
-        <div
-          class="flex w-full items-center mt-14 overflow-x-auto gap-[30px]"
-          style="scrollbar-width: none"
-        >
-          <img
-            class="rounded-[10px] w-48 lg:w-80"
-            src="/assets/someone.png"
-            alt="someone"
-          />
-          <img
-            class="rounded-[10px] w-48 lg:w-80"
-            src="/assets/s.png"
-            alt="someone"
-          />
-          <img
-            class="rounded-[10px] w-48 lg:w-80"
-            src="/assets/someone2.png"
-            alt="someone"
-          />
-          <img
-            class="rounded-[10px] w-48 lg:w-80"
-            src="/assets/someone3.png"
-            alt="someone"
-          />
-          <img
-            class="rounded-[10px] w-48 lg:w-80"
-            src="/assets/s.png"
-            alt="someone"
-          />
-          <img
-            class="rounded-[10px] w-48 lg:w-80"
-            src="/assets/someone2.png"
-            alt="someone"
-          />
+        <div class="relative mt-14 w-full overflow-hidden">
+          <button
+            class="prev-2 flex absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-transparent md:bg-white p-3 size-10 items-center justify-center rounded-full md:shadow-md"
+          >
+            <i
+              class="fa-solid fa-chevron-left text-transparent md:text-black"
+            ></i>
+          </button>
+          <div
+            id="slider-2"
+            class="slider-2 flex w-full transition-transform duration-300"
+          >
+            <div class="min-w-[200px] lg:min-w-[320px] flex-shrink-0">
+              <img
+                class="rounded-[10px] w-48 lg:w-80"
+                src="/assets/someone.png"
+                alt="someone"
+              />
+            </div>
+            <div class="min-w-[200px] lg:min-w-[320px] flex-shrink-0">
+              <img
+                class="rounded-[10px] w-48 lg:w-80"
+                src="/assets/s.png"
+                alt="someone"
+              />
+            </div>
+            <div class="min-w-[200px] lg:min-w-[320px] flex-shrink-0">
+              <img
+                class="rounded-[10px] w-48 lg:w-80"
+                src="/assets/someone2.png"
+                alt="someone"
+              />
+            </div>
+            <div class="min-w-[200px] lg:min-w-[320px] flex-shrink-0">
+              <img
+                class="rounded-[10px] w-48 lg:w-80"
+                src="/assets/someone3.png"
+                alt="someone"
+              />
+            </div>
+            <div class="min-w-[200px] lg:min-w-[320px] flex-shrink-0">
+              <img
+                class="rounded-[10px] w-48 lg:w-80"
+                src="/assets/s.png"
+                alt="someone"
+              />
+            </div>
+            <div class="min-w-[200px] lg:min-w-[320px] flex-shrink-0">
+              <img
+                class="rounded-[10px] w-48 lg:w-80"
+                src="/assets/someone2.png"
+                alt="someone"
+              />
+            </div>
+          </div>
+          <button
+            class="next-2 flex absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-transparent md:bg-white p-3 size-10 items-center justify-center rounded-full md:shadow-md"
+          >
+            <i
+              class="fa-solid fa-chevron-right text-transparent md:text-black"
+            ></i>
+          </button>
         </div>
       </section>
 
@@ -608,6 +636,67 @@
       </section>
     </main>
     <!-- End Content -->
+
+    <!-- widget -->
+    <div
+      class="fixed bg-white shadow-md rounded-md py-6 px-3 left-6 top-1/2 transform -translate-y-1/2 flex flex-col gap-4 z-50"
+    >
+      <a
+        href="https://www.instagram.com/psi_jakarta"
+        target="_blank"
+        title="Instagram"
+        class="group flex items-center justify-center w-12 h-12 rounded-full transition-all hover:bg-gray-200"
+      >
+        <i
+          class="fab fa-instagram text-gray-500 text-xl group-hover:text-black"
+        ></i>
+      </a>
+      <a
+        href="https://x.com/PSI_Jakarta"
+        target="_blank"
+        title="X"
+        class="group flex items-center justify-center w-12 h-12 rounded-full transition-all hover:bg-gray-200"
+      >
+        <i class="fab fa-x text-gray-500 text-xl group-hover:text-black"></i>
+      </a>
+      <a
+        href="https://www.tiktok.com/@psi_jakarta"
+        target="_blank"
+        title="TikTok"
+        class="group flex items-center justify-center w-12 h-12 rounded-full transition-all hover:bg-gray-200"
+      >
+        <i
+          class="fab fa-tiktok text-gray-500 text-xl group-hover:text-black"
+        ></i>
+      </a>
+      <a
+        href="https://youtube.com/@psidkijakarta1468"
+        target="_blank"
+        title="YouTube"
+        class="group flex items-center justify-center w-12 h-12 rounded-full transition-all hover:bg-gray-200"
+      >
+        <i
+          class="fab fa-youtube text-gray-500 text-xl group-hover:text-black"
+        ></i>
+      </a>
+      <a
+        href="https://wa.me/6285727531260"
+        target="_blank"
+        title="WhatsApp"
+        class="group flex items-center justify-center w-12 h-12 rounded-full transition-all hover:bg-gray-200"
+      >
+        <i
+          class="fab fa-whatsapp text-gray-500 text-xl group-hover:text-black"
+        ></i>
+      </a>
+      <a
+        href="#"
+        title="Difabel"
+        class="group flex items-center justify-center w-12 h-12 rounded-full transition-all hover:bg-gray-200"
+      >
+        <img src="/assets/logo_difabel.png.png" class="w-6 h-6" alt="Difabel" />
+      </a>
+    </div>
 
     <footer class="w-full border-t border-[#D9D9D9]">
       <div class="w-full mt-5 max-w-7xl px-4 lg:px-0 mx-auto">
