@@ -181,3 +181,20 @@ $(document).ready(function () {
   });
 });
 
+
+document.getElementById('toggle-widget').addEventListener('click', function () {
+  const widget = document.getElementById('social-widget');
+  const chevron = document.getElementById('chevron-icon');
+
+  if (widget.classList.contains('-translate-x-full')) {
+    widget.classList.remove('-translate-x-full');
+    widget.classList.add('translate-x-0');
+    chevron.classList.remove('fa-chevron-right');
+    chevron.classList.add('fa-chevron-left');
+  } else {
+    widget.classList.remove('translate-x-0');
+    widget.classList.add('-translate-x-full');
+    chevron.classList.remove('fa-chevron-left');
+    chevron.classList.add('fa-chevron-right');
+  }
+});
