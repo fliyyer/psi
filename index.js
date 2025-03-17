@@ -198,33 +198,3 @@ document.getElementById('toggle-widget').addEventListener('click', function () {
     chevron.classList.add('fa-chevron-right');
   }
 });
-
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-      const filterItems = document.querySelectorAll(".filter-item");
-
-      function setActiveFilter(clickedItem) {
-        filterItems.forEach((item) => {
-          item.classList.remove("bg-[#f2f2f2]", "font-medium", "text-[#14171F]");
-          item.classList.add("text-[#14171F]/70");
-        });
-
-        clickedItem.classList.add("bg-[#f2f2f2]", "font-medium", "text-[#14171F]");
-        clickedItem.classList.remove("text-[#14171F]/70");
-      }
-
-      const defaultFilter = document.querySelector('.filter-item[data-filter="all"]');
-      if (defaultFilter) {
-        setActiveFilter(defaultFilter);
-      }
-
-      filterItems.forEach((item) => {
-        item.addEventListener("click", function () {
-          setActiveFilter(item);
-
-          const filterValue = item.getAttribute("data-filter");
-          console.log("Filter dipilih:", filterValue);
-        });
-      });
-    });

@@ -9,22 +9,6 @@
       rel="stylesheet"
       href="https://atugatran.github.io/FontAwesome6Pro/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
-    />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-[#fff]">
@@ -68,17 +52,21 @@
     <!-- End Navbar -->
 
     <header class="w-full py-[72px]">
-      <div class="text-center text-black/60 text-[32px] font-medium">
+      <div class="text-center text-black/60 text-xl md:text-[32px] font-medium">
         PSI Jakarta Terkini
       </div>
-      <h1 class="text-#131313 text-center text-5xl font-bold leading-[64px]">
+      <h1
+        class="text-#131313 text-center mt-2 text-3xl md:text-5xl font-bold leading-[64px]"
+      >
         Suara PSI Jakarta
       </h1>
-      <div class="w-full max-w-7xl mx-auto flex gap-8 mt-8">
-        <div class="w-[70%]">
+      <div
+        class="w-full max-w-7xl px-4 lg:px-0 mx-auto flex flex-col lg:flex-row gap-8 mt-8"
+      >
+        <div class="w-full lg:w-[70%]">
           <div class="p-4 rounded-xl border-2 border-[#E8E8EA] bg-white">
             <div
-              class="relative flex h-[450px] flex-col overflow-hidden rounded-xl"
+              class="relative flex h-80 md:h-[450px] flex-col overflow-hidden rounded-xl"
             >
               <img
                 src="/assets/news.png"
@@ -93,7 +81,7 @@
               <div class="relative mt-auto z-10 p-6 text-white">
                 <span class="text-lg leading-6">12 December 2023</span>
                 <h1
-                  class="text-2xl md:text-[42px] leading-[48px] font-medium mt-2"
+                  class="text-xl md:text-[42px] md:leading-[48px] font-medium mt-2"
                 >
                   Peran Vital Pemuda dalam Politik dan Transformasi Melalui Visi
                   Kaesang PSI
@@ -102,7 +90,7 @@
             </div>
           </div>
         </div>
-        <div class="w-[30%] flex flex-col">
+        <div class="w-full lg:w-[30%] flex flex-col">
           <div class="flex flex-col">
             <div class="flex justify-between items-start">
               <div
@@ -153,13 +141,17 @@
 
     <main>
       <section
-        class="w-full flex flex-col justify-center max-w-7xl mx-auto my-14"
+        class="w-full px-4 lg:px-0 flex flex-col justify-center max-w-7xl mx-auto my-8 md:my-14"
       >
         <!-- Filter Menu -->
-        <div class="flex mx-auto gap-7" id="filterMenu">
+        <div
+          class="flex mx-auto w-full justify-center gap-3 text-nowrap overflow-x-auto md:gap-7 p-2 md:p-0"
+          id="filterMenu"
+          style="scrollbar-width: none"
+        >
           <div
-            class="filter-item cursor-pointer text-[#14171F] px-3 py-1 rounded-md bg-[#f2f2f2] font-medium"
-            data-filter="all"
+            class="filter-item cursor-pointer text-[#14171F] px-3 py-1 rounded-md bg-[#f2f2f2] font-medium active"
+            data-filter="semua"
           >
             Semua
           </div>
@@ -173,7 +165,7 @@
             class="filter-item cursor-pointer text-[#14171F]/70 px-3 py-1 rounded-md"
             data-filter="politik"
           >
-            Politik dan Pemerintahan
+            Politik & Pemerintahan
           </div>
           <div
             class="filter-item cursor-pointer text-[#14171F]/70 px-3 py-1 rounded-md"
@@ -188,9 +180,298 @@
             Kesejahteraan Sosial
           </div>
         </div>
+
+        <div
+          class="w-full grid-cols-1 grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12"
+        >
+          <div class="p-4 flex flex-col rounded-xl bg-[#E51D26]">
+            <img
+              src="/assets/artikel1.png"
+              class="rounded-md w-full h-[220px] object-cover"
+              alt="Artikel 1"
+            />
+            <div
+              class="text-black/50 mt-6 bg-[#F2F2F2] px-[10px] py-1 rounded-md flex items-center justify-center w-fit"
+            >
+              Opini
+            </div>
+            <p
+              class="text-2xl mt-4 min-h-[85px] leading-7 text-white font-medium"
+            >
+              Dewan Ingin Kearifan Lokal Betawi Semakin Dikenal Luas
+            </p>
+            <span class="text-white mt-5">12 September, 2024</span>
+          </div>
+          <div class="p-4 flex flex-col rounded-xl bg-[#E51D26]">
+            <img
+              src="/assets/artikel2.png"
+              class="rounded-md w-full h-[220px] object-cover"
+              alt="Artikel 2"
+            />
+            <div
+              class="text-black/50 mt-6 bg-[#F2F2F2] px-[10px] py-1 rounded-md flex items-center justify-center w-fit"
+            >
+              Politik dan Pemerintahan
+            </div>
+            <p
+              class="text-2xl mt-4 min-h-[85px] leading-7 text-white font-medium"
+            >
+              Penerima Bansos Disisir Lagi Dan Kudu Ber-KTP DKI
+            </p>
+            <span class="text-white mt-5">25 November 2024</span>
+          </div>
+          <div class="p-4 flex flex-col rounded-xl bg-[#E51D26]">
+            <img
+              src="/assets/artikel3.png"
+              class="rounded-md w-full h-[220px] object-cover"
+              alt="Artikel 2"
+            />
+            <div
+              class="text-black/50 mt-6 bg-[#F2F2F2] px-[10px] py-1 rounded-md flex items-center justify-center w-fit"
+            >
+              Kesejahteraan Sosial
+            </div>
+            <p
+              class="text-2xl mt-4 min-h-[85px] leading-7 text-white font-medium"
+            >
+              Cegah TBC, DPRD DKI Jakarta Ajak Masyarakat Jalani Pola Hidup
+              Sehat...
+            </p>
+            <span class="text-white mt-5">5 Desember 2024</span>
+          </div>
+          <div class="p-4 flex flex-col rounded-xl bg-[#E51D26]">
+            <img
+              src="/assets/artikel4.png"
+              class="rounded-md w-full h-[220px] object-cover"
+              alt="Artikel 2"
+            />
+            <div
+              class="text-black/50 mt-6 bg-[#F2F2F2] px-[10px] py-1 rounded-md flex items-center justify-center w-fit"
+            >
+              Politik dan Pemerintahan
+            </div>
+            <p
+              class="text-2xl mt-4 min-h-[85px] leading-7 text-white font-medium"
+            >
+              Hepatitis Akut Misterius Masuk RI, PSI Desak Pemprov DKI Sigap
+            </p>
+            <span class="text-white mt-5">25 Maret 2022</span>
+          </div>
+          <div class="p-4 flex flex-col rounded-xl bg-[#E51D26]">
+            <img
+              src="/assets/artikel5.png"
+              class="rounded-md w-full h-[220px] object-cover"
+              alt="Artikel 2"
+            />
+            <div
+              class="text-black/50 mt-6 bg-[#F2F2F2] px-[10px] py-1 rounded-md flex items-center justify-center w-fit"
+            >
+              Politik dan Pemerintahan
+            </div>
+            <p
+              class="text-2xl mt-4 min-h-[85px] leading-7 text-white font-medium"
+            >
+              Soroti Kasus Hepatitis Akut, PSI Minta Pemprov DKI Jakarta
+              Nyalakan Alarm
+            </p>
+            <span class="text-white mt-5">25 Maret 2022</span>
+          </div>
+          <div class="p-4 flex flex-col rounded-xl bg-[#E51D26]">
+            <img
+              src="/assets/artikel6.png"
+              class="rounded-md w-full h-[220px] object-cover"
+              alt="Artikel 2"
+            />
+            <div
+              class="text-black/50 mt-6 bg-[#F2F2F2] px-[10px] py-1 rounded-md flex items-center justify-center w-fit"
+            >
+              Politik dan Pemerintahan
+            </div>
+            <p
+              class="text-2xl mt-4 min-h-[85px] leading-7 text-white font-medium"
+            >
+              DTKS Dibuka, PSI Minta Pemprov DKI Benahi Website
+            </p>
+            <span class="text-white mt-5">25 November 2024</span>
+          </div>
+        </div>
       </section>
     </main>
 
-    <script src="/index.js"></script>
+    <footer class="w-full border-t bg-black border-[#D9D9D9]">
+      <div class="w-full mt-16 max-w-7xl px-4 lg:px-0 mx-auto">
+        <img src="/assets/psi.svg" alt="PSI" />
+        <div
+          class="flex flex-col md:flex-row lg:flex-col w-full items-start justify-between"
+        >
+          <div
+            class="flex flex-col lg:flex-row items-start justify-between gap-5 lg:gap-20 mt-8"
+          >
+            <div class="flex flex-col min-w-[316px]">
+              <h3 class="text-lg text-white font-medium">Kontak</h3>
+              <div class="flex flex-col gap-3 mt-3">
+                <div class="flex flex-col">
+                  <p class="text-white">WhatsApp DPW PSI Jakarta</p>
+                  <a
+                    href="https://wa.me/6285727531260"
+                    target="_blank"
+                    class="text-white/80"
+                    >+62 857-2753-1260</a
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <p class="text-white">
+                    WhatsApp Fraksi PSI Jakarta #LaporPSI
+                  </p>
+                  <a
+                    href="https://wa.me/6281210007765"
+                    target="_blank"
+                    class="text-white/80"
+                    >+62 812-1000-7765</a
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <p class="text-white">Email PSI Jakarta</p>
+                  <a
+                    href="mailto:solidaritasjakarta@gmail"
+                    target="_blank"
+                    class="text-white/80"
+                    >solidaritasjakarta@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col max-w-[300px]">
+              <h3 class="text-lg text-white font-medium">Alamat DPW DKI</h3>
+              <p class="text-white/80 mt-3 leading-[160%]">
+                Jl. K.H. Wahid Hasyim No.8, RT.2/RW.7, Kb. Sirih, Kec. Menteng,
+                Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10710
+              </p>
+            </div>
+            <div class="flex flex-col md:min-w-[440px]">
+              <h3 class="text-lg text-white font-medium">
+                Dapatkan Informasi Terbaru dari Newsletter
+              </h3>
+              <div class="flex flex-row items-center gap-2 md:gap-6 mt-3">
+                <input
+                  class="bg-[#FFF] border border-[#E0E3EB] focus:outline-none rounded-md px-2 md:px-5 py-2"
+                  placeholder="Email"
+                  type="text"
+                />
+                <button
+                  class="bg-[#E51D26] text-white md:uppercase md:font-bold rounded-md px-2 md:px-5 py-2"
+                >
+                  Subcribe
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col lg:flex-row items-start justify-between my-5 lg:my-14 gap-5 lg:gap-20"
+          >
+            <div class="flex flex-col md:min-w-[316px]">
+              <h3 class="text-lg text-white font-medium">Donasi</h3>
+              <div class="flex flex-col gap-2 mt-3 text-white">
+                <p>BCA <span class="ml-3">6805550001</span></p>
+                <p>Partai Solidaritas Indonesia</p>
+              </div>
+            </div>
+            <div class="flex flex-col max-w-[300px]">
+              <h3 class="text-lg text-white font-medium">Alamat Fraksi PSI</h3>
+              <p class="text-white/80 mt-3 leading-[160%]">
+                Jl. Kebon Sirih No.18 11, RT.11/RW.2, Gambir, Kecamatan Gambir,
+                Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10110 Lt.4
+              </p>
+            </div>
+            <div class="flex flex-col md:min-w-[440px]">
+              <h3 class="text-lg text-white font-medium">
+                Ikuti Keseharian PSI Jakarta di :
+              </h3>
+              <div class="flex items-center gap-4 mt-3">
+                <a
+                  href="#"
+                  class="flex rounded-full size-10 items-center justify-center p-2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="18"
+                    width="18"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="#ffffff"
+                      d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="flex rounded-full size-10 items-center justify-center p-2"
+                >
+                  <i class="fa-brands fa-youtube text-lg text-white"></i>
+                </a>
+                <a
+                  href="#"
+                  class="flex rounded-full size-10 items-center justify-center p-2"
+                >
+                  <i class="fa-brands fa-tiktok text-lg text-white"></i>
+                </a>
+                <a
+                  href="#"
+                  class="flex rounded-full size-10 items-center justify-center p-2"
+                >
+                  <i class="fa-brands fa-whatsapp text-lg text-white"></i>
+                </a>
+                <a
+                  href="#"
+                  class="flex rounded-full size-10 items-center justify-center p-2"
+                >
+                  <i class="fa-brands fa-instagram text-lg text-white"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div></div>
+      <div class="w-full bg-[#E51D26] py-5">
+        <p class="text-white max-w-7xl px-4 lg:px-0 mx-auto">
+          PSI Jakarta © 2025. All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterItems = document.querySelectorAll(".filter-item");
+        filterItems.forEach((item) => {
+          item.addEventListener("click", function () {
+            filterItems.forEach((i) => i.classList.remove("active"));
+            this.classList.add("active");
+            updateFilterStyle(this);
+          });
+        });
+
+        function updateFilterStyle(selectedItem) {
+          filterItems.forEach((item) => {
+            if (item === selectedItem) {
+              item.classList.add(
+                "text-[#14171F]",
+                "bg-[#f2f2f2]",
+                "font-medium"
+              );
+              item.classList.remove("text-[#14171F]/70");
+            } else {
+              item.classList.remove(
+                "text-[#14171F]",
+                "bg-[#f2f2f2]",
+                "font-medium"
+              );
+              item.classList.add("text-[#14171F]/70");
+            }
+          });
+        }
+      });
+    </script>
   </body>
 </html>
