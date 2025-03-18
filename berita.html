@@ -69,18 +69,22 @@
               class="relative flex h-80 md:h-[450px] flex-col overflow-hidden rounded-xl"
             >
               <img
+                id="mainImage"
                 src="/assets/news.png"
-                alt="Peran Vital Pemuda dalam Politik dan Transformasi Melalui Visi Kaesang PSI"
                 class="absolute inset-0 w-full h-full object-cover"
               />
               <div
+                id="mainCategory"
                 class="relative z-10 w-fit text-black/50 bg-[#F2F2F2] px-3 py-1 rounded-md m-4"
               >
                 Politik dan Pemerintahan
               </div>
               <div class="relative mt-auto z-10 p-6 text-white">
-                <span class="text-lg leading-6">12 December 2023</span>
+                <span id="mainDate" class="text-lg leading-6"
+                  >12 December 2023</span
+                >
                 <h1
+                  id="mainTitle"
                   class="text-xl md:text-[42px] md:leading-[48px] font-medium mt-2"
                 >
                   Peran Vital Pemuda dalam Politik dan Transformasi Melalui Visi
@@ -91,7 +95,7 @@
           </div>
         </div>
         <div class="w-full lg:w-[30%] flex flex-col">
-          <div class="flex flex-col">
+          <div class="flex cursor-pointer flex-col article-item">
             <div class="flex justify-between items-start">
               <div
                 class="text-sm text-black/50 bg-black/5 px-[10px] py-1 rounded-md"
@@ -106,7 +110,7 @@
             </p>
           </div>
           <div class="w-full h-[1px] my-7 bg-[#E8E8EA]"></div>
-          <div class="flex flex-col">
+          <div class="flex cursor-pointer flex-col article-item">
             <div class="flex justify-between items-start">
               <div
                 class="text-sm text-black/50 bg-black/5 px-[10px] py-1 rounded-md"
@@ -121,7 +125,7 @@
             </p>
           </div>
           <div class="w-full h-[1px] my-7 bg-[#E8E8EA]"></div>
-          <div class="flex flex-col">
+          <div class="flex cursor-pointer flex-col article-item">
             <div class="flex justify-between items-start">
               <div
                 class="text-sm text-black/50 bg-black/5 px-[10px] py-1 rounded-md"

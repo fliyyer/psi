@@ -164,3 +164,41 @@ document.addEventListener("DOMContentLoaded", function () {
   renderArtikel(currentPage);
   renderPagination();
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const mainImage = document.getElementById("mainImage");
+  const mainCategory = document.getElementById("mainCategory");
+  const mainDate = document.getElementById("mainDate");
+  const mainTitle = document.getElementById("mainTitle");
+
+  const articles = [
+    {
+      image: "/assets/artikel1.png",
+      category: "Politik dan Pemerintahan",
+      date: "24 Januari 2025",
+      title: "PSI Apresiasi Gerak Cepat Pemerintah Tangani Kasus Pagar Laut di Tangerang",
+    },
+    {
+      image: "/assets/artikel2.png",
+      category: "Kesejahteraan Sosial",
+      date: "11 Februari 2025",
+      title: "Program Cek Kesehatan Gratis Dimulai, PSI: Satu Lagi Bukti Prabowo dan Gibran Bekerja unt...",
+    },
+    {
+      image: "/assets/artikel3.png",
+      category: "Politik dan Pemerintahan",
+      date: "11 Februari 2025",
+      title: "Ada Upaya Pisahkan Prabowo dan Jokowi, PSI: Semakin Diadu, Semakin Menyatu",
+    },
+  ];
+
+  document.querySelectorAll(".article-item").forEach((item, index) => {
+    item.addEventListener("click", () => {
+      mainImage.src = articles[index].image;
+      mainCategory.textContent = articles[index].category;
+      mainDate.textContent = articles[index].date;
+      mainTitle.textContent = articles[index].title;
+    });
+  });
+});
